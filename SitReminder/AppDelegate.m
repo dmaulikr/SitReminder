@@ -106,6 +106,7 @@
 - (void)showReminder
 {
 //    NSAlert *alert = [NSAlert alertWithMessageText:NSLocalizedString(@"SitReminder 提醒您休息一下吧", nil) defaultButton:NSLocalizedString(@"去休息了",nil) alternateButton:NSLocalizedString(@"停止提醒",nil) otherButton:nil informativeTextWithFormat:NSLocalizedString(@"为了您的身体健康，建议您起来活动活动!", nil)];
+    [[NSRunningApplication currentApplication] activateWithOptions:NSApplicationActivateIgnoringOtherApps];
     NSAlert *alert = [NSAlert alertWithMessageText:@"SitReminder 提醒您休息一下吧" defaultButton:@"去休息了" alternateButton:@"停止提醒" otherButton:nil informativeTextWithFormat:@"为了您的身体健康，建议您起来活动活动!"];
     [alert beginSheetModalForWindow:self.window modalDelegate:self didEndSelector:@selector(alertDidEnd:returnCode:contextInfo:) contextInfo:nil];
 }
