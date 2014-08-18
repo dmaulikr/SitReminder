@@ -1,6 +1,6 @@
 ## SitReminder
 
-![SitReminder](https://silentcloud.github.io/upload/SitReminder.png)
+![SitReminder](https://silentcloud.github.io/upload/Sitreminder.png)
 
 ##### Description: 
 
