@@ -13,13 +13,13 @@ NSString * const SRCountTimeKey = @"SRCountTimeKey";
 
 @implementation PreferenceData
 
-+ (void)initialize
++ (void)load
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if (![defaults objectForKey:SRLaunchAtLoginKey]) {
         [defaults  setObject:@NO forKey:SRLaunchAtLoginKey];
     }
-    if (![defaults objectForKey:SRCountTimeKey]) {
+    if (![defaults objectForKey:SRCountTimeKey] || [[defaults objectForKey:SRCountTimeKey] intValue] == 0) {
         [defaults  setObject:@60 forKey:SRCountTimeKey];
     }
 }

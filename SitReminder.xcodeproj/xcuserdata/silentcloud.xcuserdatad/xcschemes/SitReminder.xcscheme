@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9369D064199DDFD5007AF692"
+               BlueprintIdentifier = "93AF833F19A1E7D000E47DCF"
                BuildableName = "SitReminder.app"
                BlueprintName = "SitReminder"
                ReferencedContainer = "container:SitReminder.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9369D077199DDFD5007AF692"
+               BlueprintIdentifier = "93AF835219A1E7D000E47DCF"
                BuildableName = "SitReminderTests.xctest"
                BlueprintName = "SitReminderTests"
                ReferencedContainer = "container:SitReminder.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9369D077199DDFD5007AF692"
+               BlueprintIdentifier = "93AF835219A1E7D000E47DCF"
                BuildableName = "SitReminderTests.xctest"
                BlueprintName = "SitReminderTests"
                ReferencedContainer = "container:SitReminder.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9369D064199DDFD5007AF692"
+            BlueprintIdentifier = "93AF833F19A1E7D000E47DCF"
             BuildableName = "SitReminder.app"
             BlueprintName = "SitReminder"
             ReferencedContainer = "container:SitReminder.xcodeproj">
@@ -75,7 +75,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9369D064199DDFD5007AF692"
+            BlueprintIdentifier = "93AF833F19A1E7D000E47DCF"
             BuildableName = "SitReminder.app"
             BlueprintName = "SitReminder"
             ReferencedContainer = "container:SitReminder.xcodeproj">
@@ -93,7 +93,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9369D064199DDFD5007AF692"
+            BlueprintIdentifier = "93AF833F19A1E7D000E47DCF"
             BuildableName = "SitReminder.app"
             BlueprintName = "SitReminder"
             ReferencedContainer = "container:SitReminder.xcodeproj">

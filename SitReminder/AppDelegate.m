@@ -43,7 +43,7 @@
     [_launchCheckBox setState:isLaunchAtLogin ? 1 : 0];
     NSNumber *countDownTime = [PreferenceData preferenceCountDownTime];
     [_timeField setIntValue:[countDownTime intValue]];
-    _timer = [countDownTime intValue] * 10;
+    _timer = [countDownTime intValue] * 60;
 }
 
 - (IBAction)showMainWindow:(id)sender
@@ -67,12 +67,10 @@
 {
     if (_isRuning) {
         [self stopTimeCountDown];
-        toggleItem.title = NSLocalizedString(@"已停止", nil);
-        toggleItem.image = [NSImage imageNamed:@"reminder_off"];
-        _isRuning = NO;
     } else {
         [self startTimeCountDown:_timer];
-        toggleItem.title = NSLocalizedString(@"已启动", nil);
+//        toggleItem.title = NSLocalizedString(@"已启动", nil);
+        toggleItem.title = @"已启动";
         toggleItem.image = [NSImage imageNamed:@"reminder_on"];
         _isRuning = YES;
     }
@@ -93,6 +91,10 @@
         [_countTimer invalidate];
     }
     _countTimer = nil;
+//  toggleItem.title = NSLocalizedString(@"已停止", nil);
+    toggleItem.title = @"已停止";
+    toggleItem.image = [NSImage imageNamed:@"reminder_off"];
+    _isRuning = NO;
 }
 
 - (CFTimeInterval)getIdleTime
@@ -134,7 +136,7 @@
 {
     [PreferenceData setPreferenceLaunchAtLogin:[_launchCheckBox state] == 1 ? YES : NO];
     [PreferenceData setPreferenceCountDownTime:[NSNumber numberWithInt:[_timeField intValue]]];
-    _timer = [_timeField intValue] * 10;
+    _timer = [_timeField intValue] * 60;
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification

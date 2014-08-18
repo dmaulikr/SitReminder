@@ -1,42 +1,42 @@
 
-/* Class = "NSBox"; title = "AutoStart"; ObjectID = "0Yc-mZ-c9j"; */
-"0Yc-mZ-c9j.title" = "自动启动";
+/* Class = "NSMenuItem"; title = "退出"; ObjectID = "0XM-3d-Nd2"; */
+"0XM-3d-Nd2.title" = "退出";
 
-/* Class = "NSTextFieldCell"; title = "Recommendation 40 - 60 minutes Best"; ObjectID = "4J0-Yk-adf"; */
-"4J0-Yk-adf.title" = "建议 40 - 60 最佳";
+/* Class = "NSTextFieldCell"; title = "建议 40 - 60 分钟最佳"; ObjectID = "3WG-6J-RBN"; */
+"3WG-6J-RBN.title" = "建议 40 - 60 分钟最佳";
 
-/* Class = "NSMenuItem"; title = "Exit"; ObjectID = "73g-hV-XcE"; */
-"73g-hV-XcE.title" = "退出";
+/* Class = "NSMenuItem"; title = "已启动"; ObjectID = "C1S-OW-sNT"; */
+"C1S-OW-sNT.title" = "已启动";
 
-/* Class = "NSMenuItem"; title = "started"; ObjectID = "PEm-eZ-EBF"; */
-"PEm-eZ-EBF.title" = "已启动";
+/* Class = "NSMenuItem"; title = "关于SitReminder"; ObjectID = "Jjl-KL-mC2"; */
+"Jjl-KL-mC2.title" = "关于SitReminder";
 
-/* Class = "NSMenuItem"; title = "About SitReminder"; ObjectID = "QmD-1r-3ji"; */
-"QmD-1r-3ji.title" = "关于 SitReminder";
+/* Class = "NSWindow"; title = "SitReminder"; ObjectID = "QvC-M9-y7g"; */
+"QvC-M9-y7g.title" = "SitReminder";
 
-/* Class = "NSWindow"; title = "SitReminder Preferences"; ObjectID = "QvC-M9-y7g"; */
-"QvC-M9-y7g.title" = "SitReminder 偏好设置";
+/* Class = "NSTextFieldCell"; title = "用户登录 Mac OS X 后自动启动 SitReminder 软件"; ObjectID = "VwM-Rm-coi"; */
+"VwM-Rm-coi.title" = "用户登录 Mac OS X 后自动启动 SitReminder 软件";
 
-/* Class = "NSMenuItem"; title = "Check update"; ObjectID = "Vbg-nN-pWt"; */
-"Vbg-nN-pWt.title" = "检查更新";
+/* Class = "NSTextFieldCell"; title = "分钟"; ObjectID = "YXo-gs-Tio"; */
+"YXo-gs-Tio.title" = "分钟";
 
-/* Class = "NSTextFieldCell"; title = "Time:"; ObjectID = "hke-rc-rSp"; */
-"hke-rc-rSp.title" = "时间间隔:";
+/* Class = "NSMenuItem"; title = "检查更新"; ObjectID = "aZS-Sw-0JS"; */
+"aZS-Sw-0JS.title" = "检查更新";
 
-/* Class = "NSTextFieldCell"; title = "Minutes"; ObjectID = "kHk-qe-ORg"; */
-"kHk-qe-ORg.title" = "分钟";
+/* Class = "NSTextFieldCell"; title = "40"; ObjectID = "cL1-Ae-i8G"; */
+"cL1-Ae-i8G.title" = "40";
 
-/* Class = "NSButtonCell"; title = "Auto start SitReminder after login"; ObjectID = "moa-pS-hX9"; */
-"moa-pS-hX9.title" = "Auto start SitReminder after login";
+/* Class = "NSBox"; title = "时间设置"; ObjectID = "dsk-Is-Ixq"; */
+"dsk-Is-Ixq.title" = "时间设置";
 
-/* Class = "NSTextFieldCell"; title = "Auto start SitReminder after user logged in Mac OS X"; ObjectID = "pWx-Ia-8Cn"; */
-"pWx-Ia-8Cn.title" = "用户登录 Mac OS X 后自动启动 SitReminder 软件";
+/* Class = "NSButtonCell"; title = "在用户登录时自动启动 SitReminder"; ObjectID = "gyf-xK-zJe"; */
+"gyf-xK-zJe.title" = "在用户登录时自动启动 SitReminder";
 
-/* Class = "NSBox"; title = "Time setting"; ObjectID = "pxD-Jh-LKe"; */
-"pxD-Jh-LKe.title" = "时间设置";
+/* Class = "NSBox"; title = "自动启动"; ObjectID = "iwk-XV-bqY"; */
+"iwk-XV-bqY.title" = "自动启动";
 
-/* Class = "NSMenuItem"; title = "Preferences..."; ObjectID = "rgN-X1-fGR"; */
-"rgN-X1-fGR.title" = "偏好设置";
+/* Class = "NSMenuItem"; title = "偏好设置"; ObjectID = "rNv-9y-7Hb"; */
+"rNv-9y-7Hb.title" = "偏好设置";
 
-/* Class = "NSTextFieldCell"; title = "40"; ObjectID = "uBO-nB-d1j"; */
-"uBO-nB-d1j.title" = "40";
+/* Class = "NSTextFieldCell"; title = "时间间隔:"; ObjectID = "zZ0-gS-f4B"; */
+"zZ0-gS-f4B.title" = "时间间隔:";
