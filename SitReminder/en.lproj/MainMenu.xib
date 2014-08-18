@@ -24,7 +24,7 @@
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
-        <window title="偏好设置" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g">
+        <window title="SitReminder Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="413" height="199"/>
@@ -33,7 +33,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="413" height="199"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <box autoresizesSubviews="NO" fixedFrame="YES" title="自动启动" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="0Yc-mZ-c9j">
+                    <box autoresizesSubviews="NO" fixedFrame="YES" title="AutoStart" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="0Yc-mZ-c9j">
                         <rect key="frame" x="17" y="110" width="379" height="75"/>
                         <view key="contentView">
                             <rect key="frame" x="1" y="1" width="377" height="59"/>
@@ -41,7 +41,7 @@
                             <subviews>
                                 <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kET-Q7-qby">
                                     <rect key="frame" x="10" y="33" width="232" height="18"/>
-                                    <buttonCell key="cell" type="check" title="在用户登录时自动启动 SitReminder" bezelStyle="regularSquare" imagePosition="left" inset="2" id="moa-pS-hX9">
+                                    <buttonCell key="cell" type="check" title="Auto start SitReminder after login" bezelStyle="regularSquare" imagePosition="left" inset="2" id="moa-pS-hX9">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                         <font key="font" size="13" name="STHeitiSC-Light"/>
                                     </buttonCell>
@@ -51,7 +51,7 @@
                                 </button>
                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o40-J4-iDx">
                                     <rect key="frame" x="28" y="11" width="301" height="17"/>
-                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="用户登录 Mac OS X 后自动启动 SitReminder 软件" id="pWx-Ia-8Cn">
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Auto start SitReminder after user logged in Mac OS X" id="pWx-Ia-8Cn">
                                         <font key="font" size="11" name="STHeitiSC-Light"/>
                                         <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -63,22 +63,22 @@
                         <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <font key="titleFont" size="11" name="STHeitiSC-Light"/>
                     </box>
-                    <box autoresizesSubviews="NO" fixedFrame="YES" title="时间设置" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="pxD-Jh-LKe">
+                    <box autoresizesSubviews="NO" fixedFrame="YES" title="Time setting" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="pxD-Jh-LKe">
                         <rect key="frame" x="17" y="16" width="379" height="81"/>
                         <view key="contentView">
                             <rect key="frame" x="1" y="1" width="377" height="65"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jTP-xl-Qu3">
-                                    <rect key="frame" x="16" y="26" width="60" height="17"/>
-                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="时间间隔:" id="hke-rc-rSp">
+                                    <rect key="frame" x="16" y="36" width="37" height="17"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Time:" id="hke-rc-rSp">
                                         <font key="font" size="13" name="STHeitiSC-Light"/>
                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
                                 </textField>
                                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NYm-gh-rhX">
-                                    <rect key="frame" x="81" y="23" width="87" height="22"/>
+                                    <rect key="frame" x="58" y="33" width="87" height="22"/>
                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="40" drawsBackground="YES" id="uBO-nB-d1j">
                                         <font key="font" metaFont="system"/>
                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -86,16 +86,16 @@
                                     </textFieldCell>
                                 </textField>
                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fxq-jN-rug">
-                                    <rect key="frame" x="174" y="26" width="30" height="17"/>
-                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="分钟" id="kHk-qe-ORg">
+                                    <rect key="frame" x="148" y="36" width="53" height="17"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Minutes" id="kHk-qe-ORg">
                                         <font key="font" size="13" name="STHeitiSC-Light"/>
                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
                                 </textField>
                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q9V-W9-x58">
-                                    <rect key="frame" x="224" y="24" width="301" height="17"/>
-                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="建议 40 - 60 分钟最佳" id="4J0-Yk-adf">
+                                    <rect key="frame" x="16" y="8" width="301" height="17"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Recommendation 40 - 60 minutes Best" id="4J0-Yk-adf">
                                         <font key="font" size="11" name="STHeitiSC-Light"/>
                                         <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -117,32 +117,32 @@
         <customObject id="GVC-y5-Mfs" customClass="LaunchAtLoginController"/>
         <menu id="pNg-FR-L6G">
             <items>
-                <menuItem title="已启动" onStateImage="reminder_on" offStateImage="reminder_pause" id="PEm-eZ-EBF">
+                <menuItem title="started" id="PEm-eZ-EBF">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="toggleServiceStatus:" target="Voe-Tx-rLC" id="7wp-K6-UQI"/>
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="qkm-zR-IZP"/>
-                <menuItem title="偏好设置" keyEquivalent="," id="rgN-X1-fGR">
+                <menuItem title="Preferences..." keyEquivalent="," id="rgN-X1-fGR">
                     <connections>
                         <action selector="showMainWindow:" target="Voe-Tx-rLC" id="6Xz-eM-bBZ"/>
                     </connections>
                 </menuItem>
-                <menuItem title="检查更新" id="Vbg-nN-pWt">
+                <menuItem title="Check update" id="Vbg-nN-pWt">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="checkForUpdates:" target="uuY-dT-kCt" id="C9u-5j-hAN"/>
                     </connections>
                 </menuItem>
-                <menuItem title="关于SitReminder" id="QmD-1r-3ji">
+                <menuItem title="About SitReminder" id="QmD-1r-3ji">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="showAbout:" target="Voe-Tx-rLC" id="PJP-ap-DV6"/>
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="Lcf-iS-dwc"/>
-                <menuItem title="退出" keyEquivalent="q" id="73g-hV-XcE">
+                <menuItem title="Exit" keyEquivalent="q" id="73g-hV-XcE">
                     <connections>
                         <action selector="exitApplication:" target="Voe-Tx-rLC" id="G1C-p5-uNS"/>
                     </connections>
@@ -152,8 +152,4 @@
         </menu>
         <customObject id="uuY-dT-kCt" customClass="SUUpdater"/>
     </objects>
-    <resources>
-        <image name="reminder_on" width="8" height="9"/>
-        <image name="reminder_pause" width="8" height="10"/>
-    </resources>
 </document>

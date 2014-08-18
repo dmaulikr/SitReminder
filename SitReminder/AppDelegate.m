@@ -9,8 +9,6 @@
 #import "AppDelegate.h"
 #import "PreferenceData.h"
 
-static NSTimeInterval const countDownTime = 60;
-
 @interface AppDelegate () <NSWindowDelegate>
 {
     IBOutlet NSMenu *statusMenu;
@@ -21,6 +19,7 @@ static NSTimeInterval const countDownTime = 60;
     IBOutlet NSMenuItem *toggleItem;
     IBOutlet NSButton *_launchCheckBox;
     IBOutlet NSTextField *_timeField;
+    NSTimeInterval _timer;
 }
 @property (weak) IBOutlet NSWindow *window;
 @end
@@ -37,11 +36,14 @@ static NSTimeInterval const countDownTime = 60;
     [statusItem setTarget:self];
     [statusItem setHighlightMode:YES];
     [statusItem setImage:[NSImage imageNamed:@"status-icon"]];
-
+    
+    [toggleItem setOffStateImage:nil];
+    [toggleItem setImage:[NSImage imageNamed:@"reminder_on"]];
     BOOL isLaunchAtLogin = [PreferenceData preferenceLaunchAtLogin];
     [_launchCheckBox setState:isLaunchAtLogin ? 1 : 0];
     NSNumber *countDownTime = [PreferenceData preferenceCountDownTime];
     [_timeField setIntValue:[countDownTime intValue]];
+    _timer = [countDownTime intValue] * 10;
 }
 
 - (IBAction)showMainWindow:(id)sender
@@ -66,12 +68,12 @@ static NSTimeInterval const countDownTime = 60;
     if (_isRuning) {
         [self stopTimeCountDown];
         toggleItem.title = NSLocalizedString(@"已停止", nil);
-        [toggleItem setState:0];
+        toggleItem.image = [NSImage imageNamed:@"reminder_off"];
         _isRuning = NO;
     } else {
-        [self startTimeCountDown:countDownTime];
+        [self startTimeCountDown:_timer];
         toggleItem.title = NSLocalizedString(@"已启动", nil);
-        [toggleItem setState:1];
+        toggleItem.image = [NSImage imageNamed:@"reminder_on"];
         _isRuning = YES;
     }
 }
@@ -108,8 +110,8 @@ static NSTimeInterval const countDownTime = 60;
 -(void)alertDidEnd:(NSAlert *)alert returnCode:(int)choice contextInfo:(void *)v
 {
     if (choice == NSAlertDefaultReturn) {
-        //if idleTime <= 30 secons, remind user again to have rest! only once,then start timer
-        _idleTimer = [NSTimer scheduledTimerWithTimeInterval:30 target:self selector:@selector(remindAgain) userInfo:nil repeats:NO];
+        //if within 60 seconds idleTime <= 30 seconds, remind user again to have rest! only once,then start timer
+        _idleTimer = [NSTimer scheduledTimerWithTimeInterval:60 target:self selector:@selector(remindAgain) userInfo:nil repeats:NO];
     } else if (choice ==  NSAlertAlternateReturn){
         //stop timer
         [self stopTimeCountDown];
@@ -125,19 +127,20 @@ static NSTimeInterval const countDownTime = 60;
     [_idleTimer invalidate];
     _idleTimer = nil;
     //restart timer, -30 because the idleTimer
-    [self startTimeCountDown:(countDownTime - 30)];
+    [self startTimeCountDown:(_timer - 30)];
 }
 
 - (void)savePreferenceData
 {
     [PreferenceData setPreferenceLaunchAtLogin:[_launchCheckBox state] == 1 ? YES : NO];
     [PreferenceData setPreferenceCountDownTime:[NSNumber numberWithInt:[_timeField intValue]]];
+    _timer = [_timeField intValue] * 10;
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     _isRuning = YES;
-    [self startTimeCountDown:countDownTime];
+    [self startTimeCountDown:_timer];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(windowWillClose:) name:NSWindowWillCloseNotification object:nil];
 }
 

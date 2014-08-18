@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		934250E119A1022C00B53AAD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 934250E019A1022C00B53AAD /* Info.plist */; };
 		934250E519A19C1500B53AAD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934250E319A19C1500B53AAD /* MainMenu.xib */; };
+		934DD76519A1A77D005665D2 /* reminder_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 934DD76419A1A77D005665D2 /* reminder_off.png */; };
 		9369D06B199DDFD5007AF692 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9369D06A199DDFD5007AF692 /* main.m */; };
 		9369D06E199DDFD5007AF692 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9369D06D199DDFD5007AF692 /* AppDelegate.m */; };
 		9369D070199DDFD5007AF692 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9369D06F199DDFD5007AF692 /* Images.xcassets */; };
@@ -19,7 +20,6 @@
 		9369D093199DFE00007AF692 /* status-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9369D091199DFE00007AF692 /* status-icon.png */; };
 		9369D094199DFE00007AF692 /* status-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9369D092199DFE00007AF692 /* status-icon@2x.png */; };
 		9369D097199E0833007AF692 /* reminder_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 9369D095199E0833007AF692 /* reminder_on.png */; };
-		9369D098199E0833007AF692 /* reminder_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 9369D096199E0833007AF692 /* reminder_pause.png */; };
 		9369D09C199E0979007AF692 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9369D09A199E0967007AF692 /* Sparkle.framework */; };
 		9369D09D199E0979007AF692 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9369D09A199E0967007AF692 /* Sparkle.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9369D0A3199E1A27007AF692 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9369D09F199E1A27007AF692 /* Credits.rtf */; };
@@ -56,7 +56,9 @@
 
 /* Begin PBXFileReference section */
 		934250E019A1022C00B53AAD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		934250E419A19C1500B53AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		934250E619A19D9B00B53AAD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		934DD76419A1A77D005665D2 /* reminder_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reminder_off.png; sourceTree = "<group>"; };
+		934DD76819A1A831005665D2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
 		9369D065199DDFD5007AF692 /* SitReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SitReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9369D06A199DDFD5007AF692 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9369D06C199DDFD5007AF692 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,7 +74,6 @@
 		9369D091199DFE00007AF692 /* status-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-icon.png"; sourceTree = "<group>"; };
 		9369D092199DFE00007AF692 /* status-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-icon@2x.png"; sourceTree = "<group>"; };
 		9369D095199E0833007AF692 /* reminder_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reminder_on.png; sourceTree = "<group>"; };
-		9369D096199E0833007AF692 /* reminder_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reminder_pause.png; sourceTree = "<group>"; };
 		9369D09A199E0967007AF692 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		9369D0A0199E1A27007AF692 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = "zh-Hans"; path = "zh-Hans.lproj/Credits.rtf"; sourceTree = "<group>"; };
 		9369D0A5199E55E0007AF692 /* LaunchAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAtLoginController.h; sourceTree = "<group>"; };
@@ -172,8 +173,8 @@
 		9369D088199DF7BA007AF692 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				934DD76419A1A77D005665D2 /* reminder_off.png */,
 				9369D095199E0833007AF692 /* reminder_on.png */,
-				9369D096199E0833007AF692 /* reminder_pause.png */,
 				9369D091199DFE00007AF692 /* status-icon.png */,
 				9369D092199DFE00007AF692 /* status-icon@2x.png */,
 				9369D089199DF7BA007AF692 /* dsa_pub.pem */,
@@ -279,6 +280,7 @@
 				9369D093199DFE00007AF692 /* status-icon.png in Resources */,
 				9369D090199DF7BA007AF692 /* icon.icns in Resources */,
 				9369D070199DDFD5007AF692 /* Images.xcassets in Resources */,
+				934DD76519A1A77D005665D2 /* reminder_off.png in Resources */,
 				934250E519A19C1500B53AAD /* MainMenu.xib in Resources */,
 				9369D094199DFE00007AF692 /* status-icon@2x.png in Resources */,
 				9369D097199E0833007AF692 /* reminder_on.png in Resources */,
@@ -286,7 +288,6 @@
 				9369D08F199DF7BA007AF692 /* Localizable.strings in Resources */,
 				9369D08E199DF7BA007AF692 /* dsa_pub.pem in Resources */,
 				934250E119A1022C00B53AAD /* Info.plist in Resources */,
-				9369D098199E0833007AF692 /* reminder_pause.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +334,8 @@
 		934250E319A19C1500B53AAD /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				934250E419A19C1500B53AAD /* Base */,
+				934250E619A19D9B00B53AAD /* en */,
+				934DD76819A1A831005665D2 /* zh-Hans */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
