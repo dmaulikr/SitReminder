@@ -105,15 +105,16 @@
 
 - (void)showReminder
 {
-    NSAlert *alert = [NSAlert alertWithMessageText:NSLocalizedString(@"SitReminder 提醒您休息一下吧", nil) defaultButton:NSLocalizedString(@"去休息了",nil) alternateButton:NSLocalizedString(@"停止提醒",nil) otherButton:nil informativeTextWithFormat:NSLocalizedString(@"为了您的身体健康，建议您起来活动活动!", nil)];
+//    NSAlert *alert = [NSAlert alertWithMessageText:NSLocalizedString(@"SitReminder 提醒您休息一下吧", nil) defaultButton:NSLocalizedString(@"去休息了",nil) alternateButton:NSLocalizedString(@"停止提醒",nil) otherButton:nil informativeTextWithFormat:NSLocalizedString(@"为了您的身体健康，建议您起来活动活动!", nil)];
+    NSAlert *alert = [NSAlert alertWithMessageText:@"SitReminder 提醒您休息一下吧" defaultButton:@"去休息了" alternateButton:@"停止提醒" otherButton:nil informativeTextWithFormat:@"为了您的身体健康，建议您起来活动活动!"];
     [alert beginSheetModalForWindow:self.window modalDelegate:self didEndSelector:@selector(alertDidEnd:returnCode:contextInfo:) contextInfo:nil];
 }
 
 -(void)alertDidEnd:(NSAlert *)alert returnCode:(int)choice contextInfo:(void *)v
 {
     if (choice == NSAlertDefaultReturn) {
-        //if within 60 seconds idleTime <= 30 seconds, remind user again to have rest! only once,then start timer
-        _idleTimer = [NSTimer scheduledTimerWithTimeInterval:60 target:self selector:@selector(remindAgain) userInfo:nil repeats:NO];
+        //if within 40 seconds idleTime <= 30 seconds, remind user again to have rest! only once,then start timer
+        _idleTimer = [NSTimer scheduledTimerWithTimeInterval:40 target:self selector:@selector(remindAgain) userInfo:nil repeats:NO];
     } else if (choice ==  NSAlertAlternateReturn){
         //stop timer
         [self stopTimeCountDown];
@@ -124,7 +125,7 @@
 {
     CFTimeInterval idleTime = CGEventSourceSecondsSinceLastEventType(kCGEventSourceStateCombinedSessionState, kCGAnyInputEventType);
     if (idleTime <= 30) {
-        NSRunAlertPanel(@"SitReminder", NSLocalizedString(@"发现你并没有休息或者休息时间太短，建议您注意休息!", nil), NSLocalizedString(@"我知道啦！", nil), nil, nil);
+        NSRunAlertPanel(@"SitReminder", @"发现你并没有休息或者休息时间太短，建议您注意休息!", @"我知道啦！", nil, nil);
     }
     [_idleTimer invalidate];
     _idleTimer = nil;
