@@ -6,9 +6,9 @@
 
 SitReminder is a mac app that when you sit for a long time in front of a computer, it can remind you to have a rest
 
-##### Download 1.0.0:
+##### Download 1.0.1:
 
-[SitReminder.dmg 1.0.0](https://silentcloud.github.io/upload/SitReminder.dmg)
+[SitReminder.dmg 1.0.1](https://silentcloud.github.io/upload/SitReminder.dmg)
 
 ##### License: 
 
