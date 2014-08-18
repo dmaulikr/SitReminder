@@ -1,6 +1,6 @@
 ## SitReminder
 
-
+![SitReminder](./Resources/icon.icns)
 
 ##### Description: 
 
