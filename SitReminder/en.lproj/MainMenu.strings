@@ -5,8 +5,8 @@
 /* Class = "NSTextFieldCell"; title = "suggest 40 - 60 minutes best"; ObjectID = "3WG-6J-RBN"; */
 "3WG-6J-RBN.title" = "suggest 40 - 60 minutes best";
 
-/* Class = "NSMenuItem"; title = "Started"; ObjectID = "C1S-OW-sNT"; */
-"C1S-OW-sNT.title" = "Started";
+/* Class = "NSMenuItem"; title = "► Started"; ObjectID = "C1S-OW-sNT"; */
+"C1S-OW-sNT.title" = "► Started";
 
 /* Class = "NSMenuItem"; title = "About SitReminder"; ObjectID = "Jjl-KL-mC2"; */
 "Jjl-KL-mC2.title" = "About SitReminder";
