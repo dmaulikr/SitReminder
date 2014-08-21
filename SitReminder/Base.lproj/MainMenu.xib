@@ -114,7 +114,7 @@
         <customObject id="Q9S-5e-heN" customClass="SUUpdater"/>
         <menu id="zSf-pa-lhP">
             <items>
-                <menuItem title="已启动" id="C1S-OW-sNT">
+                <menuItem title="► 已启动" id="C1S-OW-sNT">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="toggleServiceStatus:" target="Voe-Tx-rLC" id="zY3-c3-Cba"/>
