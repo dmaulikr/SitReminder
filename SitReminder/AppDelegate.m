@@ -38,7 +38,7 @@
     [statusItem setImage:[NSImage imageNamed:@"status-icon"]];
     
     [toggleItem setOffStateImage:nil];
-    [toggleItem setImage:[NSImage imageNamed:@"reminder_on"]];
+//    [toggleItem setImage:[NSImage imageNamed:@"reminder_on"]];
     BOOL isLaunchAtLogin = [PreferenceData preferenceLaunchAtLogin];
     [_launchCheckBox setState:isLaunchAtLogin ? 1 : 0];
     NSNumber *countDownTime = [PreferenceData preferenceCountDownTime];
@@ -70,8 +70,9 @@
     } else {
         [self startTimeCountDown:_timer];
 //        toggleItem.title = NSLocalizedString(@"已启动", nil);
-        toggleItem.title = @"已启动";
-        toggleItem.image = [NSImage imageNamed:@"reminder_on"];
+        toggleItem.title = @"► 已启动";
+//        toggleItem.image = [NSImage imageNamed:@"reminder_on"];
+        toggleItem.image = nil;
         _isRuning = YES;
     }
 }
@@ -92,7 +93,7 @@
     }
     _countTimer = nil;
 //  toggleItem.title = NSLocalizedString(@"已停止", nil);
-    toggleItem.title = @"已停止";
+    toggleItem.title = @" 已停止";
     toggleItem.image = [NSImage imageNamed:@"reminder_off"];
     _isRuning = NO;
 }
@@ -108,7 +109,7 @@
 //    NSAlert *alert = [NSAlert alertWithMessageText:NSLocalizedString(@"SitReminder 提醒您休息一下吧", nil) defaultButton:NSLocalizedString(@"去休息了",nil) alternateButton:NSLocalizedString(@"停止提醒",nil) otherButton:nil informativeTextWithFormat:NSLocalizedString(@"为了您的身体健康，建议您起来活动活动!", nil)];
     [[NSRunningApplication currentApplication] activateWithOptions:NSApplicationActivateIgnoringOtherApps];
     NSAlert *alert = [NSAlert alertWithMessageText:@"SitReminder 提醒您休息一下吧" defaultButton:@"去休息了" alternateButton:@"停止提醒" otherButton:nil informativeTextWithFormat:@"为了您的身体健康，建议您起来活动活动!"];
-    [alert beginSheetModalForWindow:self.window modalDelegate:self didEndSelector:@selector(alertDidEnd:returnCode:contextInfo:) contextInfo:nil];
+    [alert beginSheetModalForWindow:nil modalDelegate:self didEndSelector:@selector(alertDidEnd:returnCode:contextInfo:) contextInfo:nil];
 }
 
 -(void)alertDidEnd:(NSAlert *)alert returnCode:(int)choice contextInfo:(void *)v

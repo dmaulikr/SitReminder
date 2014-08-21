@@ -17,8 +17,6 @@
 		93AF836E19A1E83C00E47DCF /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 93AF836719A1E83C00E47DCF /* dsa_pub.pem */; };
 		93AF836F19A1E83C00E47DCF /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 93AF836819A1E83C00E47DCF /* icon.icns */; };
 		93AF837019A1E83C00E47DCF /* reminder_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AF836919A1E83C00E47DCF /* reminder_off.png */; };
-		93AF837119A1E83C00E47DCF /* reminder_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AF836A19A1E83C00E47DCF /* reminder_on.png */; };
-		93AF837219A1E83C00E47DCF /* reminder_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AF836B19A1E83C00E47DCF /* reminder_pause.png */; };
 		93AF837319A1E83C00E47DCF /* status-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AF836C19A1E83C00E47DCF /* status-icon.png */; };
 		93AF837419A1E83C00E47DCF /* status-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AF836D19A1E83C00E47DCF /* status-icon@2x.png */; };
 		93AF837619A1E8D800E47DCF /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 93AF836419A1E83200E47DCF /* Sparkle.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -55,10 +53,10 @@
 		934746C519A1F26600D54E53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		934746D219A1F86A00D54E53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		934746D319A1F90B00D54E53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		934746D519A1F96300D54E53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
-		934746D619A1FAB300D54E53 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
 		934746D719A1FAD000D54E53 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		934746D819A1FB0D00D54E53 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = "zh-Hans"; path = "zh-Hans.lproj/Credits.rtf"; sourceTree = "<group>"; };
+		9348702019A5E12F00E5DE21 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		9348702119A5E13400E5DE21 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
 		93AF834019A1E7D000E47DCF /* SitReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SitReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AF834419A1E7D000E47DCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93AF834519A1E7D000E47DCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -73,8 +71,6 @@
 		93AF836719A1E83C00E47DCF /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		93AF836819A1E83C00E47DCF /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		93AF836919A1E83C00E47DCF /* reminder_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reminder_off.png; sourceTree = "<group>"; };
-		93AF836A19A1E83C00E47DCF /* reminder_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reminder_on.png; sourceTree = "<group>"; };
-		93AF836B19A1E83C00E47DCF /* reminder_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reminder_pause.png; sourceTree = "<group>"; };
 		93AF836C19A1E83C00E47DCF /* status-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-icon.png"; sourceTree = "<group>"; };
 		93AF836D19A1E83C00E47DCF /* status-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-icon@2x.png"; sourceTree = "<group>"; };
 		93AF837819A1E90600E47DCF /* LaunchAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAtLoginController.h; sourceTree = "<group>"; };
@@ -180,8 +176,6 @@
 				93AF836719A1E83C00E47DCF /* dsa_pub.pem */,
 				93AF836819A1E83C00E47DCF /* icon.icns */,
 				93AF836919A1E83C00E47DCF /* reminder_off.png */,
-				93AF836A19A1E83C00E47DCF /* reminder_on.png */,
-				93AF836B19A1E83C00E47DCF /* reminder_pause.png */,
 				93AF836C19A1E83C00E47DCF /* status-icon.png */,
 				93AF836D19A1E83C00E47DCF /* status-icon@2x.png */,
 				934746C619A1F26600D54E53 /* Localizable.strings */,
@@ -280,8 +274,6 @@
 				93AF834E19A1E7D000E47DCF /* MainMenu.xib in Resources */,
 				93AF838019A1EA2D00E47DCF /* Credits.rtf in Resources */,
 				93AF837319A1E83C00E47DCF /* status-icon.png in Resources */,
-				93AF837219A1E83C00E47DCF /* reminder_pause.png in Resources */,
-				93AF837119A1E83C00E47DCF /* reminder_on.png in Resources */,
 				93AF837019A1E83C00E47DCF /* reminder_off.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,8 +332,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				93AF834D19A1E7D000E47DCF /* Base */,
-				934746D519A1F96300D54E53 /* en */,
-				934746D619A1FAB300D54E53 /* zh-Hans */,
+				9348702019A5E12F00E5DE21 /* en */,
+				9348702119A5E13400E5DE21 /* zh-Hans */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
