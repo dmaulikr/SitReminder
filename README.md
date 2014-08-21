@@ -8,7 +8,7 @@ SitReminder is a mac app that when you sit for a long time in front of a compute
 
 ##### Download 1.0.2:
 
-[SitReminder.dmg 1.0.2](https://silentcloud.github.io/upload/SitReminder.dmg)
+[SitReminder.dmg 1.1.0](https://silentcloud.github.io/upload/SitReminder.dmg)
 
 ##### License: 
 
